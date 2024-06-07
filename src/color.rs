@@ -8,6 +8,16 @@ pub enum Color {
 }
 
 impl Color {
+    /// Converts the color to a string representation.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use cards_game_brex::color::Color;
+    ///
+    /// let color = Color::G;
+    /// assert_eq!(color.as_str(), "Green");
+    /// ```
     pub fn as_str(&self) -> &str {
         match self {
             Color::G => "Green",
