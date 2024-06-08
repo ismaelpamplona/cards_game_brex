@@ -33,3 +33,47 @@ You have a card game where each card has a color and an acquisition cost in gems
 
 2. **Function `purchase`**:
    Develop a function/method `purchase` that deducts the gem balance of the player when purchasing a card and adds the card to the player's deck, provided they have sufficient balance.
+
+## Instructions to Run the Project
+
+### Prerequisites
+
+- Ensure you have [Docker](https://www.docker.com/) installed on your system.
+- Ensure you have [Docker Compose](https://docs.docker.com/compose/) installed on your system.
+
+### Running the tests with docker
+
+1. **Clone the Repository**
+
+2. **Build the Docker Image**:
+   Build the Docker image using Docker Compose:
+
+   ```sh
+   docker compose build
+   ```
+
+3. **Run the the tests in Docker Container**:
+   Run the Docker container using Docker Compose:
+   ```sh
+   docker compose up
+   ```
+
+### Running the tests with cargo
+
+All tests:
+
+```sh
+cargo test
+```
+
+Specific tests:
+
+```sh
+cargo test --test <test_name>
+```
+
+### Generating docs
+
+```sh
+cargo doc --open
+```
